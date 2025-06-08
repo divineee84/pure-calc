@@ -1,4 +1,4 @@
-# 🧮 Simple Calculator (Python CLI)
+# 🧮 Simple Calculator (Python CLI) --
 
 A basic command-line calculator built with Python. Supports:
 - Addition
