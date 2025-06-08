@@ -1,44 +1,54 @@
-# 🧮 Simple Calculator (Python CLI) --
+# 🧮 Pro CLI Calculator (Python) 
 
-A basic command-line calculator built with Python. Supports:
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Exit option
+A sleek, command-line calculator built in Python — for devs who love clean code and powerful performance.
+
+### 🔢 Supports:
+- Addition ➕
+- Subtraction ➖
+- Multiplication ✖️
+- Division ➗
+- Exit anytime 👋
+
+---
 
 ## 📦 Features
-- Clean text-based interface
-- Handles division by zero
-- Easy to use — beginner friendly
-- Pure Python — no extra libraries
+
+- ⚡ Minimalistic, fast CLI interface
+- 🚫 Handles division by zero cleanly
+- 🧠 Smart float input validation
+- 🔁 Reusable structure with functions
+- ✅ Beginner-friendly, yet polished
+- 💯 Pure Python — no external libraries
+
+---
 
 ## 🚀 How to Run
 
-1. Clone the repo or copy the code:
+1. Clone the repo or copy the code manually:
    ```bash
-   git clone https://github.com/woxxy84/simple-calculator.git
+   git clone https://github.com/divineee84/pure-calc
+   ```
+2. Navigate into the project folder and run:
 
-2. Run the script:
-  ```bash
-    python calculator.py
+```bash
+python calculator.py
+```
+3. Follow on-screen instructions. 
 
-3. Follow the on-screen instructions to perform calculations.
+## 🛠 Sample Usage
+```bash
+==============================
+     ✨ SIMPLE CALCULATOR ✨
+==============================
+1️⃣  Addition
+2️⃣  Subtraction
+3️⃣  Multiplication
+4️⃣  Division
+5️⃣  Exit
+==============================
+👉 Select option (1–5): 1
+🔢 Enter first number: 10
+🔢 Enter second number: 5
+✅ Result: 10.0 + 5.0 = 15.0
+```
 
-#🛠 Sample Usage
-
-  ```bash
-    SIMPLE CALCULATOR..!
-     Type 1 for addition
-     Type 2 for subtraction
-     Type 3 for multiplication
-     Type 4 for division
-     Type 5 to exit the program...!!
-
-     Select between 1/2/3/4/5: 1
-     Enter first number: 10
-     Enter second number: 5
-     Result: 15.0
-
-
- 
