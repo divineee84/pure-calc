@@ -1,37 +1,54 @@
-print("SIMPLE CALCULATOR..!")
-print("Type 1 for addition")
-print("Type 2 for subtraction")
-print("Type 3 for multiplication")
-print("Type 4 for division")
-print("Type 5 to exit the program...!!")
+def show_menu():
+    print("\n" + "="*30)
+    print("     ✨ SIMPLE CALCULATOR ✨")
+    print("="*30)
+    print("1️⃣  Addition")
+    print("2️⃣  Subtraction")
+    print("3️⃣  Multiplication")
+    print("4️⃣  Division")
+    print("5️⃣  Exit")
+    print("="*30)
 
-a = int(input("Select between 1/2/3/4/5: "))
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("⚠️  Invalid number. Try again.")
 
-if a == 5:
-    print("Closing the program, goodbye!")
+def calculator():
+    while True:
+        show_menu()
+        choice = input("👉 Select option (1-5): ").strip()
 
-elif a == 1:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    print("Result:", num1 + num2)
+        if choice == '5':
+            print("👋 Exiting... Stay sharp!")
+            break
 
-elif a == 2:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    print("Result:", num1 - num2)
+        elif choice in {'1', '2', '3', '4'}:
+            num1 = get_number("🔢 Enter first number: ")
+            num2 = get_number("🔢 Enter second number: ")
 
-elif a == 3:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    print("Result:", num1 * num2)
+            if choice == '1':
+                result = num1 + num2
+                operation = '+'
+            elif choice == '2':
+                result = num1 - num2
+                operation = '-'
+            elif choice == '3':
+                result = num1 * num2
+                operation = '*'
+            elif choice == '4':
+                if num2 == 0:
+                    print("🚫 Error: Division by zero is undefined.")
+                    continue
+                result = num1 / num2
+                operation = '/'
 
-elif a == 4:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    if num2 == 0:
-        print("Error: Cannot divide by zero!")
-    else:
-        print("Result:", num1 / num2)
+            print(f"✅ Result: {num1} {operation} {num2} = {result}")
 
-else:
-    print("Invalid input. Please choose between 1 to 5.")
+        else:
+            print("❌ Invalid input. Please choose a number between 1 and 5.")
+
+# Run the calculator
+calculator()
